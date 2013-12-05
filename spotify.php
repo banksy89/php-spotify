@@ -20,7 +20,7 @@ class Spotify
 
 	private function build_url($string, $type='track') 
 	{
-		$query = self::$base_url.'/search/1/'.$type.'.json?q='.urlencode($string);
+		return self::$base_url.'/search/1/'.$type.'.json?q='.urlencode($string);
 	}
 
 	private function fetch($query)
